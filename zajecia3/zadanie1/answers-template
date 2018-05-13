@@ -1,6 +1,26 @@
 lista najczęstszych słów dla ham:
+is
+in 
+on 
+you
+of
+a
+and 
+for
+to
+the 
 
 lista najczęstszych słów dla spam:
+to 
+the 
+and 
+a 
+you 
+for 
+of 
+your 
+is 
+in 
 
 zero rule:
 accuracy:
@@ -8,21 +28,17 @@ sensivity:
 specifity
 precision:
 
-
 Bayes
 accuracy:
 sensivity:
 specifity
 precision:
 
-
-
 Bayes + stemmer lancester:
 accuracy:
 sensivity:
 specifity
 precision:
-
 
 Bayes + stemmer porter:
 accuracy:
