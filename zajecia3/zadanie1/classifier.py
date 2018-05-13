@@ -26,8 +26,8 @@ class zero_rule(classifier):
 
     def predict(data_set):
         return [zero_rule.is_spam for _ in range(len(data_set))]
-
-
+    
+   
 class Bayes(classifier):
 
     @classmethod
@@ -177,3 +177,13 @@ class Bayes_laplac(Bayes):
                 return ((alfa + cls.ham_words_dict[word]) / (beta + cls.total_number)) * (cls.apriori_ham / cls.apriori_spam)
             else:
                 return ((alfa + 0) / (beta + cls.total_number)) * (cls.apriori_ham / cls.apriori_spam)
+            
+            
+              # top10
+        
+      top10hamstwo = sorted(cls.ham_words_dict.items(), key=lambda x: x[1])       
+      print(top10hamstwo[-10:])
+         
+      top10spamy = sorted(cls.spam_words_dict.items(), key=lambda x: x[1])
+      print(top10spamy[-10:][::-1])
+
